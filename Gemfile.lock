@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/firstdraft/draft_generators.git
+  revision: 478608f7d3c86649f84b84b110af254ab1395002
+  branch: jw-add-account-generator
+  specs:
+    draft_generators (0.0.3)
+      devise
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -58,6 +66,8 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    bcrypt (3.1.13)
+    bcrypt (3.1.13-java)
     bindex (0.8.1)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
@@ -76,6 +86,12 @@ GEM
     childprocess (3.0.0)
     concurrent-ruby (1.1.5)
     crass (1.0.5)
+    devise (4.7.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0)
+      responders
+      warden (~> 1.2.3)
     erubi (1.9.0)
     ffi (1.11.2)
     ffi (1.11.2-java)
@@ -116,6 +132,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.5-x86-mingw32)
       mini_portile2 (~> 2.4.0)
+    orm_adapter (0.5.0)
     public_suffix (4.0.1)
     puma (4.3.0)
       nio4r (~> 2.0)
@@ -157,6 +174,9 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     regexp_parser (1.6.0)
+    responders (3.0.0)
+      actionpack (>= 5.0)
+      railties (>= 5.0)
     ruby_dep (1.5.0)
     rubyzip (2.0.0)
     sass-rails (6.0.0)
@@ -199,6 +219,8 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2019.3)
       tzinfo (>= 1.0.0)
+    warden (1.2.8)
+      rack (>= 2.0.6)
     web-console (4.0.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -232,6 +254,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  draft_generators!
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   puma (~> 4.1)
